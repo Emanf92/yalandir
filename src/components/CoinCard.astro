@@ -1,22 +1,33 @@
 ---
+import Gold from '../assets/coins.png';
+import { Image } from 'astro:assets';
+import { Converter } from './converter/Converter';
 interface Props {
 	title: string;
-	body: string;
-	href: string;
+	short: string;
+	value?: number | null;
+	icon: string;
 }
 
-const { href, title, body } = Astro.props;
+const { title, short, icon, value } = Astro.props;
+const cleanPrice = !!value ? Math.round(value * 100) / 100 : null;
 ---
 
 <li class="link-card">
-	<a href={href}>
+	<a href="javascript:void(0)">
+		<div class="icon">
+			<img src={icon} alt={title} />
+		</div>
 		<h2>
 			{title}
-			<span>&rarr;</span>
 		</h2>
-		<p>
-			{body}
+		<p class="coin-value">
+			{cleanPrice}
+			<Image class="mo" src={Gold} alt="Monete d'oro" />
 		</p>
+		{ !!cleanPrice && (
+			<Converter client:load symbol={short} price={cleanPrice} />
+		)}
 	</a>
 </li>
 <style>
@@ -41,7 +52,31 @@ const { href, title, body } = Astro.props;
 		color: white;
 		background-color: #23262d;
 		opacity: 0.8;
+		display: grid;
+		grid-template-columns: fit-content(140px) 1fr;
+		grid-template-rows: 1fr 1fr 1fr;
 	}
+	.icon {
+		grid-column: 1;
+		grid-row: 1 / span 3;
+		padding-right: 20px;
+	}
+	.icon img {
+		width: 120px;
+		height: 120px;
+		border-radius: 10px;
+	}
+	.coin-value {
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+	}
+	.mo {
+		height: 18px;
+		width: 18px;
+		margin-left: 3px;
+	}
+
 	h2 {
 		margin: 0;
 		font-size: 1.25rem;

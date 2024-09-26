@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Oro Nero Demoniaco",
+    "short": "DCN",
+    "cryptoId": "TON",
+    "order": 1
+  },
+  {
+    "name": "Drakon",
+    "short": "DRG",
+    "cryptoId": "ADA",
+    "order": 2
+  },
+  {
+    "name": "Moneta Imperatrice",
+    "short": "EMP",
+    "cryptoId": "TRX",
+    "order": 3
+  },
+  {
+    "name": "Celestio",
+    "short": "SKY",
+    "cryptoId": "AVAX",
+    "order": 4
+  },
+  {
+    "name": "Tiara",
+    "short": "TIA",
+    "cryptoId": "ICP",
+    "order": 5
+  },
+  {
+    "name": "Moneta del Vuoto",
+    "short": "VOD",
+    "cryptoId": "SOL",
+    "order": 6
+  },
+  {
+    "name": "Maglio",
+    "short": "WGE",
+    "cryptoId": "APT",
+    "order": 7
+  },
+  {
+    "name": "Legnon",
+    "short": "WOO",
+    "cryptoId": "KAS",
+    "order": 8
+  }
+]

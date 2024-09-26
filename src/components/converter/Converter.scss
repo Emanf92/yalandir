@@ -1,0 +1,35 @@
+.converter {
+  display: flex;
+  align-items: center;
+}
+
+.converter span {
+  margin: 0 5px;
+}
+
+.converter-input {
+  width: 140px;
+  border: 1px solid white;
+  border-radius: 4px;
+  display: flex;
+  height: 30px;
+  align-items: center;
+  background-color: #dedede;
+}
+
+.converter-input input {
+  width: 80px;
+  height: 30px;
+  padding: 0 8px;
+  box-sizing: border-box;
+  outline: none;
+  border: 0;
+}
+
+.converter-input label {
+  display: block;
+  flex-grow: 1;
+  text-align: center;
+  color: black;
+  font-weight: bold;
+}
