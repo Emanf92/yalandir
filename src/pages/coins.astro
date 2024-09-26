@@ -20,8 +20,6 @@ const response = await fetch(`${CmcUri}?symbol=${encodeURIComponent(allCoins)}`,
 });
 const cmcData: CmcData = await response.json();
 
-console.warn(cmcData.data['SOL'][0]);
-
 const fullCoins: ExtendedCoin[] = coins.map((coin: Coin): ExtendedCoin => {
     const cryptoList: CmcCoin[] = cmcData.data[coin.cryptoId];
     const crypto = !!cryptoList && cryptoList.length > 0 ? cryptoList[0] : null;

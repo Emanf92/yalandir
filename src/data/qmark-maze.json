@@ -1,0 +1,12 @@
+[
+  ["TL","TL","BR","TL","BL","TL","TR","BL","BL","TL"],
+  ["BR","TL","BL","TL","TR","TL","TR","BR","TL","TR"],
+  ["BR","TL","BR","TR","BL","TL","TR","TR","TR","TR"],
+  ["BL","TR","TL","BR","BR","TR","TR","TR","TR","TL"],
+  ["BR","BL","TR","BL","TL","BR","BL","TR","BL","BR"],
+  ["TR","TL","BR","BR","BL","BL","BR","TL","TL","BL"],
+  ["BL","BL","BL","BL","TR","BL","BL","TR","TR","TL"],
+  ["TL","TR","TL","BL","BL","TR","TR","BL","BR","BL"],
+  ["BR","TL","BL","TL","BR","TL","TR","TR","TL","TL"],
+  ["TR","BL","TL","BR","TL","TL","BL","BR","TR","TR"]
+]

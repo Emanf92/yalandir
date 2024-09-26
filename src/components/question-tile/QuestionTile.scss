@@ -1,0 +1,46 @@
+.question-tile {
+  width: 100px;
+  height: 100px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: relative;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  //noinspection CssUnknownTarget
+  &.TR {
+    background-image: url('/images/qmarks/TR.png');
+  }
+
+  //noinspection CssUnknownTarget
+  &.TL {
+    background-image: url('/images/qmarks/TL.png');
+  }
+
+  //noinspection CssUnknownTarget
+  &.BR {
+    background-image: url('/images/qmarks/BR.png');
+  }
+
+  //noinspection CssUnknownTarget
+  &.BL {
+    background-image: url('/images/qmarks/BL.png');
+  }
+
+  &.BROKEN {
+    background-color: black;
+  }
+
+  &.CLICKED:after {
+    content: " ";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 0, 0, 0.6);
+  }
+}
