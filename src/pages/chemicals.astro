@@ -8,6 +8,8 @@ import BiolonIcon from '../assets/chemicals/biolon.jpg';
 import PotilinaIcon from '../assets/chemicals/potilina.jpg';
 import TagtracinaIcon from '../assets/chemicals/tagtracina.jpg';
 
+Astro.response.headers.set("Cache-Control", "no-cache, no-store, must-revalidate");
+
 const chemicals = [
     { name: "Potilina", max: 32, icon: PotilinaIcon },
     { name: "Atcan", max: 16, icon: ActanIcon },
